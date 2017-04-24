@@ -349,5 +349,5 @@ foreach($payments as $key => $val){
 
 </div>
 <script>
-update_check('3.0');
+update_check('4.0');
 </script>

@@ -312,7 +312,7 @@ foreach($payments as $key => $val){
                  <?php echo $val['group_name'];?>
                   <button class="btn btn-<?php echo $colorcode[$i];?>">
   <?php echo $this->config->item(strtolower($val['payment_gateway']).'_currency_prefix');?> <?php echo $val['amount'];?> <?php echo $this->config->item(strtolower($val['payment_gateway']).'_currency_sufix');?>  
-          </div>    
+          </button>    
      </div>     
 
          
