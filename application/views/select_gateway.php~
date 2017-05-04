@@ -145,7 +145,7 @@ if(!$this->session->userdata('logged_in')){
   <input type='hidden' name='custom' value="<?php echo $user['uid'].'-'.$group['gid'];?>" />
   <input type='hidden' name='li_0_name' value="<?php echo $this->lang->line('quiz_subscription');?>" />
   <input type='hidden' name='li_0_price' value="<?php echo $group['price']*$this->config->item('checkout_conversion');?>" />
-  <input name='submit' type='submit' class="btn btn-default" value="<?php echo $this->lang->line('checkout');?>" />
+  <input name='submit' type='submit' class="btn btn-default" value="<?php echo $this->lang->line('paynow');?>" />
 </form>
 
   

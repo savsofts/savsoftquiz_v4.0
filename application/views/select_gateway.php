@@ -103,7 +103,7 @@ if(!$this->session->userdata('logged_in')){
 
 
 
-<form name="_xclick" action="https://ipnpb.<?php echo $this->config->item('paypal_environment');?>paypal.com/cgi-bin/webscr" method="post">
+<form name="_xclick" action="https://www.<?php echo $this->config->item('paypal_environment');?>paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="<?php echo $this->config->item('paypal_receiver');?>">
 <input type="hidden" name="currency_code" value="USD">
