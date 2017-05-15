@@ -68,7 +68,12 @@ left: 0px;
 z-index: 1200;
 }
 
-	
+.checkbox_layer{
+z-index:100;
+position:absolute;
+width:100%;
+height:100%;
+}	
 </style>
 
 
@@ -489,9 +494,9 @@ echo "<br><br>";
 	
 	<button class="btn btn-info"  onClick="javascript:clear_response();"  style="margin-top:2px;"  ><?php echo $this->lang->line('clear');?></button>
 
-	<button class="btn btn-success"  id="backbtn" style="visibility:hidden;" onClick="javascript:show_back_question();"  style="margin-top:2px;" ><?php echo $this->lang->line('back');?></button>
+	<button class="btn btn-success"  id="backbtn" style="visibility:hidden;" onClick="javascript:show_back_question2();"  style="margin-top:2px;" ><?php echo $this->lang->line('back');?></button>
 	
-	<button class="btn btn-success" id="nextbtn" onClick="javascript:show_next_question();" style="margin-top:2px;" ><?php echo $this->lang->line('save_next');?></button>
+	<button class="btn btn-success" id="nextbtn" onClick="javascript:show_next_question2();" style="margin-top:2px;" ><?php echo $this->lang->line('save_next');?></button>
 	
 	<button class="btn btn-danger"  onClick="javascript:cancelmove();" style="margin-top:2px;" ><?php echo $this->lang->line('submit_quiz');?></button>
 </div>
@@ -538,12 +543,12 @@ function increasectime(){
  
  $(".question_div").on("swiperight",function(){
  
-  show_back_question();
+  show_back_question2();
 });
 
  $(".question_div").on("swipeleft",function(){
  
-  show_next_question();
+  show_next_question2();
 });
 
 $('#slideri').click(function () {

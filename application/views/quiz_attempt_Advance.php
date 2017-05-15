@@ -23,7 +23,12 @@ left: 0px;
 z-index: 1200;
 }
 
-	
+.checkbox_layer{
+z-index:100;
+position:absolute;
+width:100%;
+height:100%;
+}	
 </style>
 
 
@@ -216,7 +221,11 @@ foreach($questions as $qk => $question){
 				if($option['qid']==$question['qid']){
 			?>
 			 
-		<div class="op op_style"  onClick="checkrad2('answer_value<?php echo $qk.'-'.$i;?>');"><table><tr><td> <input type="checkbox" name="answer[<?php echo $qk;?>][]" id="answer_value<?php echo $qk.'-'.$i;?>"   value="<?php echo $option['oid'];?>"  <?php if(in_array($option['oid'],$save_ans)){ echo 'checked'; } ?> style="position:relative;" > </td><td> <?php echo $option['q_option'];?> </td></tr></table> </div>
+		<div class="op op_style"  >
+		<div class="checkbox_layer" onClick="checkrad2('answer_value<?php echo $qk.'-'.$i;?>');"></div>
+		
+		
+		<table><tr><td> <input type="checkbox" name="answer[<?php echo $qk;?>][]" id="answer_value<?php echo $qk.'-'.$i;?>"   value="<?php echo $option['oid'];?>"  <?php if(in_array($option['oid'],$save_ans)){ echo 'checked'; } ?> style="position:relative;" > </td><td> <?php echo $option['q_option'];?> </td></tr></table> </div>
 			 
 			 
 			 <?php 

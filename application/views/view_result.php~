@@ -664,7 +664,7 @@ foreach($questions as $qk => $question){
 					
 				}
 			}echo "<br>";
-			echo "<b>".$this->lang->line('correct_options').'</b>: '.implode(', ',trim($correct_options));
+			echo "<b>".$this->lang->line('correct_options').'</b>: '.implode(', ',trimarray(($correct_options)));
 		 }
 			
 // multiple_choice_multiple_answer	
@@ -691,7 +691,7 @@ foreach($questions as $qk => $question){
 			 
 		 <?php 
 
-if(in_array($option['oid'],$save_ans)){   echo  $option['q_option'].', '; }?> 
+if(in_array($option['oid'],$save_ans)){   echo  trim($option['q_option']).', '; }?> 
 
 			 
 		 	 	 
@@ -876,6 +876,8 @@ if(in_array($option['oid'],$save_ans)){   echo  $option['q_option'].', '; }?>
 <div class="col-md-2 col-sm-2" id="q<?php echo $qk;?>"  style="font-size:30px;">
 
 <?php if($ind_score[$qk]=='1'){ ?><i class="glyphicon glyphicon-ok"></i>  <?php }else if($ind_score[$qk]=='2'){ ?><i class="glyphicon glyphicon-remove"></i> <?php }  ?>
+
+
 </div>
 </div>
 

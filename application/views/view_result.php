@@ -664,7 +664,7 @@ foreach($questions as $qk => $question){
 					
 				}
 			}echo "<br>";
-			echo "<b>".$this->lang->line('correct_options').'</b>: '.implode(', ',trim($correct_options));
+			echo "<b>".$this->lang->line('correct_options').'</b>: '.implode(', ',array_map('trim',($correct_options)));
 		 }
 			
 // multiple_choice_multiple_answer	
