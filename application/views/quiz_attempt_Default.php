@@ -436,7 +436,7 @@ var ind_time=new Array();
 $ind_time=explode(',',$quiz['individual_time']);
 for($ct=0; $ct < $quiz['noq']; $ct++){
 	?>
-	ind_time[<?php echo $ct;?>]=<?php echo $ind_time[$ct];?>;
+ind_time[<?php echo $ct;?>]=<?php if(!isset($ind_time[$ct])){ echo 0;}else{ echo $ind_time[$ct]; }?>;
 	<?php 
 }
 ?>

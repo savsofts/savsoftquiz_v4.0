@@ -482,7 +482,8 @@ function save_answer(qn){
 	
 }
 
- 
+var ind_time=new Array();
+
 function setIndividual_time(cqn){
 	if(cqn==undefined || cqn == null ){
 		var cqn='0';

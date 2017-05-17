@@ -87,6 +87,7 @@ if($this->config->item('tinymce')){
 if($this->session->userdata('logged_in')){
 $logged_in=$this->session->userdata('logged_in');
 $tuid=$logged_in['uid'];
+if($this->uri->segment(2)!='attempt'){
 ?>
 <!-- firebase notification code starts -->
 <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
@@ -256,6 +257,7 @@ messaging.onTokenRefresh(function() {
 
 </script>
 <?php 
+}
 }
 ?>
 <!-- firebase notification code ends -->
