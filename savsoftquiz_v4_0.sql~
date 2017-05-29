@@ -325,11 +325,10 @@ CREATE TABLE `savsoft_quiz` (
 --
 -- Dumping data for table `savsoft_quiz`
 --
-
 INSERT INTO `savsoft_quiz` (`quid`, `quiz_name`, `description`, `start_date`, `end_date`, `gids`, `qids`, `noq`, `correct_score`, `incorrect_score`, `ip_address`, `duration`, `maximum_attempts`, `pass_percentage`, `view_answer`, `camera_req`, `question_selection`, `gen_certificate`, `certificate_text`, `with_login`, `quiz_template`) VALUES
-(1, 'Sample Quiz', '<p>Sample Quiz Sample Quiz</p>', 1460344840, 1491880840, '3,1', '1,3,6,7', 4, '1', '0', '', 1000, 10, 50, 1, 0, 0, 0, NULL, 1, 'Advance'),
-(2, 'Sample Quiz 2', '<p>Sample Quiz 2</p>', 1457687593, 1491898393, '1,3,4', '', 5, '1', '0', '', 100, 10, 50, 1, 0, 1, 1, 'ID: #{result_id}<br>\r\n \r\n<br><br>\r\n<center>\r\n<font style=''font-size:32px;''>Certificate</font><br><br><br>\r\n<h4>This is certified that {first_name}  {last_name} has attempted the quiz ''{quiz_name}'' and obtained {percentage_obtained}% marks.<br>\r\nHis/her result status is {status}<br>\r\n</h4>\r\n\r\n</center>\r\n<br><br><br><br><br><br> \r\n{qr_code}<br>\r\nDate: {generated_date}', 1, 'Default'),
-(3, 'Quiz with advance template', '', 1490966169, 1522502169, '1,3,4', '1,3,12,13', 4, '1,1,1,1', '-0.33,-0.33,-0.33,-0.33', '', 10, 10, 50, 1, 0, 0, 0, NULL, 1, 'Advance');
+(1, 'Sample Quiz', '<p>Sample Quiz Sample Quiz</p>', 1460344840, 1522502169, '3,1', '1,3,12,13', 4, '1', '0', '', 1000, 10, 50, 1, 0, 0, 0, NULL, 1, 'Default'),
+(2, 'Quiz with advance template', '<p>Sample Quiz 2</p>', 1457687593, 1522502169, '1,3,4', '', 5, '1', '0', '', 100, 10, 50, 1, 0, 1, 1, 'ID: #{result_id}<br>\r\n \r\n<br><br>\r\n<center>\r\n<font style=''font-size:32px;''>Certificate</font><br><br><br>\r\n<h4>This is certified that {first_name}  {last_name} has attempted the quiz ''{quiz_name}'' and obtained {percentage_obtained}% marks.<br>\r\nHis/her result status is {status}<br>\r\n</h4>\r\n\r\n</center>\r\n<br><br><br><br><br><br> \r\n{qr_code}<br>\r\nDate: {generated_date}', 1, 'Advance'),
+(3, 'Sample Quiz 2', '', 1490966169, 1522502169, '1,3,4', '1,3,6,7', 4, '1,1,1,1', '-0.33,-0.33,-0.33,-0.33', '', 10, 10, 50, 1, 0, 0, 0, NULL, 1, 'Default');
 
 -- --------------------------------------------------------
 

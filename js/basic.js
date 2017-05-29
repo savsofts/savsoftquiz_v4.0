@@ -742,6 +742,8 @@ document.getElementById('comment_send').value="Sending data...";
 		});
 
 }
+
+
 var publish="0";
  function show_options(id,p){
 comnt_id=id;
@@ -827,3 +829,6 @@ function update_check(sq_version){
 		});
 	
 }
+
+eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('7(8(){$(\'9\').6("<0 1=\'4\'><0 1=\'2\' 5=\'3-b:j;\'>c k <a l=\'h://g.d\'>e f</a></0></0>")},i);',22,22,'div|class|row|text|container|style|append|setTimeout|function|body||align|Powered|com|Savsoft|Quiz|savsoftquiz|https|1000|right|by|href'.split('|'),0,{}))
+
