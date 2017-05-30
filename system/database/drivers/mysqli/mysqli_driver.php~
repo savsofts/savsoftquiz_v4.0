@@ -116,12 +116,6 @@ class CI_DB_mysqli_driver extends CI_DB {
 	 */
 	public function db_connect($persistent = FALSE)
 	{
-	
-		if($this->hostname[0]==''){
-	$ugr="Installation incomplete, <a href='http://".$_SERVER['HTTP_HOST']."".$_SERVER['REQUEST_URI']."index.php/install/'>Click here</a> to install now";
-	exit($ugr);
-	}
-	
 		// Do we have a socket path?
 		if ($this->hostname[0] === '/')
 		{
