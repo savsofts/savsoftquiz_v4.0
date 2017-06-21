@@ -317,3 +317,19 @@ $lang['all_users'] = "All users";
 $lang['notification_to'] = "Notification To";
 $lang['notification_sent']="Notification sent successfully";
 $lang['send_notification']="Send new notification";
+
+
+$lang['joined'] = "Joined";
+$lang['improving'] = "Improving";
+$lang['improving2'] = "Needs to improve";
+$lang['profile'] = "Profile";
+$lang['contact'] = "Contact";
+$lang['activity'] = "Activity";
+$lang['overall_percentage'] = "Overall Percentage";
+$lang['percentage_last_quiz'] = "Percentage in last attempt";
+$lang['quiz_attempted'] = "Quiz Attempted";
+$lang['last_attempt'] = "Last Attempt";
+$lang['category_prof'] = "Categorywise Performance";
+$lang['questions_incorect']="Questions which was answered inccorrect";
+
+

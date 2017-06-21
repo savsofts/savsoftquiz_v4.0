@@ -330,6 +330,6 @@ $lang['percentage_last_quiz'] = "Percentage in last attempt";
 $lang['quiz_attempted'] = "Quiz Attempted";
 $lang['last_attempt'] = "Last Attempt";
 $lang['category_prof'] = "Categorywise Performance";
-$lang['questions_incorect']="Questions which was answered inccorrect";
+$lang['questions_incorect']="Questions which was answered incorrect";
 
 
