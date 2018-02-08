@@ -1,4 +1,6 @@
-ADVANCE VERSION availble at https://github.com/savsofts/savsoftquiz_v4.0_advance
+************************** NOTE ************************************************************************************
+NEW or ADVANCE VERSION availble at https://github.com/savsofts/savsoftquiz_v4.0_advance and enterprise version at https://savsoftquiz.com
+
 
 savsoftquiz
 Savsoft Quiz v4.0 is a php based open source web application to create and manage online quiz, test, exam on your website.
